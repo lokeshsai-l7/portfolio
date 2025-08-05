@@ -19,14 +19,14 @@ export default function Hero({ id }) {
   return (
     <section
       id={id}
-      className=" text-white flex gap-3 items-center justify-between h-[90vh]"
+      className=" text-white flex flex-col gap-3 items-center justify-center h-[90vh]"
     >
-      <div className="flex flex-col items-start gap-2">
+      <div className="flex flex-col items-center gap-4">
         <div>
           <TypingText
             delay={0.5}
             duration={2}
-            fontSize="text-3xl"
+            fontSize="text-lg md:text-3xl"
             fontWeight="font-extrabold"
             color="text-white-500 "
             letterSpacing="tracking-wider"
@@ -39,20 +39,20 @@ export default function Hero({ id }) {
           <TypingText
             delay={3}
             duration={2}
-            fontSize="text-6xl"
+            fontSize="text-2xl md:text-6xl"
             fontWeight="font-extrabold"
             color="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text"
             letterSpacing="tracking-wider"
             align="center"
           >
-            LOKESH SAI
+            LOKESH SAI POLISHETTY
           </TypingText>
         </div>
         <div>
           <TypingText
             delay={5}
             duration={2}
-            fontSize="text-2xl"
+            fontSize="text-lg md;text-3xl"
             fontWeight="font-extrabold"
             color="text-white-500"
             letterSpacing="tracking-wider"
@@ -72,7 +72,7 @@ export default function Hero({ id }) {
             href="https://github.com/lokeshsai_l7"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-white text-black font-medium py-3 px-7 rounded-xl"
+            className="flex items-center gap-2 bg-white text-black text-sm md:text-lg font-medium py-2 md:py-3 px-4 md:px-7 rounded-xl"
           >
             <FaGithub />
             GitHub
@@ -80,14 +80,14 @@ export default function Hero({ id }) {
           <a
             href="/assets/resume/resumeFSD.pdf"
             download
-            className="flex items-center gap-2 bg-green-600 text-black font-medium py-3 px-7 rounded-xl"
+            className="flex items-center gap-2 bg-black border border-white text-white text-sm md:text-lg font-medium py-2 md:py-3 px-4 md:px-7 rounded-xl"
           >
             <MdSimCardDownload />
             Resume
           </a>
         </div>
       </div>
-      <div>
+      <div className="md:hidden">
         <ProfileCard
           name="Javi A. Torres"
           title="Software Engineer"

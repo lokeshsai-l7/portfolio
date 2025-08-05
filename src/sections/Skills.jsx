@@ -1,4 +1,15 @@
 import { useRef, useEffect, useState } from "react";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaJsSquare,
+  FaReact,
+  FaGithub,
+  FaNodeJs,
+  FaDocker,
+} from "react-icons/fa";
+import { SiFirebase, SiMongodb } from "react-icons/si";
 
 export default function Skills({ id }) {
   const ref = useRef();
@@ -22,20 +33,51 @@ export default function Skills({ id }) {
     <section
       id={id}
       ref={ref}
-      className={`transition-opacity duration-700 transform ${
+      className={`bg-black py-16 px-4 flex justify-center items-center min-h-screen transition-opacity duration-700 transform ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="text-white flex flex-col items-center h-[80vh]">
-        <h2 className="text-5xl font-bold mb-8">Skills</h2>
-        <p className="max-w-4xl text-center">
-          I have a diverse skill set that includes both frontend and backend
-          technologies. My expertise lies in the MERN stack, which allows me to
-          build dynamic and responsive web applications. I am also proficient in
-          RESTful API development, database management, and deploying
-          applications on platforms like AWS, Vercel, and Netlify.
-        </p>
+      <div className="bg-[#121212] p-8 rounded-xl max-w-5xl w-full shadow-lg relative text-white">
+        {/* Vertical label */}
+        <div className="absolute left-[-30px] top-1/2 -translate-y-1/2 rotate-[-90deg]">
+          <span className="bg-yellow-400 text-black px-2 py-1 text-sm font-semibold rounded">
+            Skills
+          </span>
+        </div>
+
+        {/* Title and description */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-yellow-400">What I do</h2>
+          <p className="text-gray-300 mt-4 max-w-2xl mx-auto text-sm">
+            I am a Full Stack Developer specializing in building modern web
+            applications. I work with both frontend and backend technologies to
+            deliver scalable and efficient solutions.
+          </p>
+        </div>
+
+        {/* Skills grid */}
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-6 justify-items-center">
+          <Skill icon={<FaHtml5 />} label="HTML" />
+          <Skill icon={<FaCss3Alt />} label="CSS" />
+          <Skill icon={<FaSass />} label="SASS" />
+          <Skill icon={<FaJsSquare />} label="JavaScript" />
+          <Skill icon={<FaReact />} label="React" />
+          <Skill icon={<FaGithub />} label="GitHub" />
+          <Skill icon={<FaNodeJs />} label="Node.js" />
+          <Skill icon={<SiFirebase />} label="Firebase" />
+          <Skill icon={<SiMongodb />} label="MongoDB" />
+          <Skill icon={<FaDocker />} label="Docker" />
+        </div>
       </div>
     </section>
+  );
+}
+
+function Skill({ icon, label }) {
+  return (
+    <div className="flex flex-col items-center text-center text-white">
+      <div className="text-4xl mb-2">{icon}</div>
+      <p className="text-sm">{label}</p>
+    </div>
   );
 }
