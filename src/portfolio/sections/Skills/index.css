@@ -1,0 +1,76 @@
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.skills-holding-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  width: 800px;
+}
+
+.retro-border {
+  padding: 16px 24px;
+  border: 2px solid white;
+  box-shadow:
+    4px 0 white,
+    -4px 0 white,
+    0 4px white,
+    0 -4px white;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  word-spacing: 15px;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 22px;
+  word-spacing: 10px;
+}
+
+.gear5 {
+  width: 400px;
+}
+
+.skills-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 20px;
+
+  place-items: center; /* centers icons horizontally + vertically */
+}
+
+.tools-box {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.skill {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.skill svg {
+  font-size: 36px;
+}
+
+.skill:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px black;
+}

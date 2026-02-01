@@ -1,0 +1,25 @@
+.goku {
+  width: 50px;
+}
+
+.next-btn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "RetroGaming";
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.display-space {
+  justify-content: space-between;
+}

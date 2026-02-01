@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#root {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "RetroGaming";
+  src: url("./assets/fonts/arcade-classic.TTF") format("truetype");
+}

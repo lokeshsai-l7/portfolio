@@ -1,0 +1,48 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  word-spacing: 15px;
+  letter-spacing: 2px;
+}
+
+.projects-section {
+  width: 80%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tabs button {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tabs .active {
+  background: #ffffff;
+  color: #000000;
+}
+
+.missions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  padding: 40px;
+  height: 420px;
+  overflow-y: auto;
+  margin-top: 20px;
+}

@@ -1,0 +1,92 @@
+.mission-card {
+  background: #0b0b0b;
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
+  height: 340px;
+  overflow: auto;
+}
+
+.mission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desc {
+  margin: 12px 0;
+  opacity: 0.85;
+}
+
+.meta {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.tech {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech span {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #000000;
+  border: 1px solid #ffffff;
+  font-size: 12px;
+}
+
+.mission-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-family: monospace;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.locked-text {
+  margin-top: 14px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.difficulty {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.difficulty.easy {
+  background: #ffffff;
+  color: #000000;
+}
+.difficulty.medium {
+  background: #ffffff;
+  color: #000000;
+}
+.difficulty.hard {
+  background: #ffffff;
+  color: #000000;
+}
