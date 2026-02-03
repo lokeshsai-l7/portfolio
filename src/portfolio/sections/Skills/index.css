@@ -97,7 +97,7 @@ p {
     margin-bottom: 24px;
   }
 
-  h1 {
+  .mobile-view-heading {
     font-size: 26px;
     text-align: center;
     word-spacing: 6px;

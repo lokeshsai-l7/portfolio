@@ -11,13 +11,13 @@ const Projects = () => {
   const [tab, setTab] = useState("work");
   return (
     <div className="projects-container">
-      <h1>Main Missions & Side Quests </h1>
+      <h1 className="projects-heading">Main Missions & Side Quests </h1>
       <section className="projects-section">
         <div className="tabs">
           <img
             src={pikachuNodding}
             alt="pikachu-nodding"
-            className="pikachu-gif"
+            className="pikachu-gif-projects "
           />
           <button
             className={tab === "work" ? "active" : ""}
@@ -34,7 +34,7 @@ const Projects = () => {
           <img
             src={pikachuBoxing}
             alt="pikachu-boxing"
-            className="pikachu-gif"
+            className="pikachu-gif-projects"
           />
         </div>
 

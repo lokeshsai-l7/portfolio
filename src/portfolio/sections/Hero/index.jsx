@@ -10,6 +10,21 @@ const Hero = () => {
   const [showBtn, setShowBtn] = useState(false);
   const [startTyping, setStartTyping] = useState(false);
 
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/resume.pdf";
+    link.download = "Lokesh_Sai_Resume.pdf";
+    link.click();
+  };
+
+  const openGitHub = () => {
+    window.open(
+      "https://github.com/lokeshsai-l7",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
+
   return (
     <div className="hero-container">
       <div className="hero-info">
@@ -46,11 +61,11 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.0, ease: "easeOut" }}
           >
-            <button className="pixel-btn mono">
+            <button className="pixel-btn mono" onClick={openGitHub}>
               <FaGithub />
               Github
             </button>
-            <button className="pixel-btn mono">
+            <button className="pixel-btn mono" onClick={downloadResume}>
               <FaRegFileAlt />
               Resume
             </button>
