@@ -1,5 +1,11 @@
 import { motion } from "motion/react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+  FaRedditAlien,
+  FaLock,
+} from "react-icons/fa";
+
 import "./index.css";
 
 const MissionCard = ({ project }) => {
@@ -20,7 +26,11 @@ const MissionCard = ({ project }) => {
 
       <p className="desc">{description}</p>
 
-      {role && <p className="meta">🧑‍💻 Role: {role}</p>}
+      {role && (
+        <p className="meta">
+          <FaRedditAlien /> Role: {role}
+        </p>
+      )}
       {impact && <p className="meta">📈 Impact: {impact}</p>}
 
       <div className="tech">
@@ -56,7 +66,9 @@ const MissionCard = ({ project }) => {
       )}
 
       {!github && !live && (
-        <p className="locked-text">🔒 Mission files confidential</p>
+        <p className="locked-text">
+          <FaLock /> Mission files confidential
+        </p>
       )}
     </motion.div>
   );

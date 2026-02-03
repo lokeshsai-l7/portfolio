@@ -1,13 +1,15 @@
 .level-card {
-  max-width: 600px;
-  margin: 60px auto;
+  max-width: 1000px;
+  margin: 10px auto;
   padding: 28px;
   border-radius: 16px;
-  background: #0b0b0b;
-  border: 2px solid #00ffcc;
+  background: #000000;
+  border: 2px solid #ffffff;
   box-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
-  font-family: monospace;
-  color: #eaeaea;
+  font-family: "Retrogaming";
+  word-spacing: 6px;
+  letter-spacing: 2px;
+  color: #ffffff;
 }
 
 .level-header {
@@ -17,8 +19,8 @@
 }
 
 .level-badge {
-  background: #00ffcc;
-  color: #000;
+  background: #ffffff;
+  color: #000000;
   padding: 6px 12px;
   border-radius: 8px;
   font-weight: bold;
@@ -40,7 +42,7 @@
 
 .section h4 {
   margin-bottom: 10px;
-  color: #00ffcc;
+  color: #ffffff;
   letter-spacing: 1px;
 }
 
@@ -57,7 +59,7 @@
 }
 
 .missions svg {
-  color: #00ffcc;
+  color: #ffffff;
 }
 
 .skills {
@@ -69,8 +71,8 @@
 .skill-pill {
   padding: 6px 12px;
   border-radius: 999px;
-  background: rgba(0, 255, 204, 0.15);
-  border: 1px solid #00ffcc;
+  background: transparent;
+  border: 1px solid #ffffff;
   font-size: 14px;
 }
 
@@ -95,7 +97,7 @@
 
 .xp-fill {
   height: 100%;
-  background: linear-gradient(90deg, #00ffcc, #00ffaa);
+  background: linear-gradient(90deg, #ffffff, #ffffff);
 }
 
 .xp-percent {

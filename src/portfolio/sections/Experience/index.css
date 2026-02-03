@@ -1,0 +1,23 @@
+h1 {
+  font-size: 40px;
+  word-spacing: 15px;
+  letter-spacing: 2px;
+}
+
+.laughing-luffy {
+  width: 400px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.experience-sub-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}

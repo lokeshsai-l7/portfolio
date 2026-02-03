@@ -1,6 +1,6 @@
 .mission-card {
   background: #0b0b0b;
-  border: 2px solid #ffffff;
+  border: 2px dashed #ffffff;
   border-radius: 16px;
   padding: 20px;
   color: #ffffff;
@@ -13,6 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  word-spacing: 15px;
+  letter-spacing: 2px;
 }
 
 .desc {
@@ -52,7 +54,7 @@
   gap: 6px;
   padding: 6px 12px;
   border-radius: 8px;
-  font-family: monospace;
+  font-family: "Retrogaming";
   background: transparent;
   border: 2px solid #ffffff;
   color: #ffffff;

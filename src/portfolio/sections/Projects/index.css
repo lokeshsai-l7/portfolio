@@ -28,6 +28,11 @@ h1 {
   padding: 10px 18px;
   border-radius: 10px;
   cursor: pointer;
+  font-family: "RetroGaming";
+  font-size: 16px;
+  vertical-align: center;
+  word-spacing: 10px;
+  letter-spacing: qpx;
 }
 
 .tabs .active {
@@ -45,4 +50,8 @@ h1 {
   height: 420px;
   overflow-y: auto;
   margin-top: 20px;
+}
+
+.pikachu-gif {
+  width: 40px;
 }

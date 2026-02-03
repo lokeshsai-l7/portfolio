@@ -20,7 +20,7 @@ const ExperienceLevelCard = () => {
       </div>
 
       <p className="company">
-        XYZ Tech <span>• 2023 – Present</span>
+        Tata Consultancy Services(TCS) <span>• 2022 – Present</span>
       </p>
 
       {/* MISSIONS */}
@@ -28,10 +28,11 @@ const ExperienceLevelCard = () => {
         <h4>MISSIONS COMPLETED</h4>
         <ul className="missions">
           {[
-            "Built scalable MERN apps",
-            "Designed REST & GraphQL APIs",
-            "Improved performance by 35%",
-            "Mentored junior devs",
+            "Built full-stack systems using React, Node.js, and databases for real-world applications",
+            "Designed APIs and UI flows for complex data-driven workflows",
+            "Optimized performance and reliability across frontend and backend",
+            "Implemented secure, role-based application features",
+            "Completed missions with cross-team collaboration and clean code practices",
           ].map((mission, index) => (
             <li key={index}>
               <FaCheckCircle /> {mission}
@@ -44,7 +45,20 @@ const ExperienceLevelCard = () => {
       <div className="section">
         <h4>SKILLS UNLOCKED</h4>
         <div className="skills">
-          {["React", "Node", "MongoDB", "Docker"].map((skill) => (
+          {[
+            "React.js",
+            "Node.js",
+            "Next.js",
+            "MS-SqL",
+            "Docker",
+            "Prisma",
+            "MANTINE-UI",
+            "WebPack",
+            "Redux",
+            "AWS",
+            "Jenkins",
+            "Argo-cd",
+          ].map((skill) => (
             <span key={skill} className="skill-pill">
               {skill}
             </span>

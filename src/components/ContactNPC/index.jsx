@@ -4,9 +4,9 @@ import { FaLinkedin, FaInstagram, FaTwitter, FaEnvelope } from "react-icons/fa";
 import "./index.css";
 
 const socials = {
-  linkedin: "https://linkedin.com/in/your-linkedin",
-  instagram: "https://instagram.com/your-instagram",
-  twitter: null, // ❌ not available
+  linkedin: "https://www.linkedin.com/in/lokesh-sai-polishetty/",
+  instagram: "https://www.instagram.com/lokesh_sai_polishetty/",
+  twitter: null,
 };
 
 const ContactNPC = () => {
@@ -34,7 +34,6 @@ const ContactNPC = () => {
       >
         {/* NPC Dialogue */}
         <div className="npc-text">
-          <p className="npc-name">Lokesh:</p>
           <p className="npc-dialogue">“Hey! Want to work together?”</p>
         </div>
 
@@ -44,7 +43,7 @@ const ContactNPC = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={() =>
-              (window.location.href = "mailto:youremail@example.com")
+              (window.location.href = "mailto:lokeshsai.polishetty@gmail.com")
             }
           >
             Yes
@@ -79,7 +78,8 @@ const ContactNPC = () => {
               </button>
               <button
                 onClick={() =>
-                  (window.location.href = "mailto:youremail@example.com")
+                  (window.location.href =
+                    "mailto:lokeshsai.polishetty@gmail.com")
                 }
               >
                 <FaEnvelope /> Email
