@@ -69,13 +69,61 @@
   word-spacing: 10px;
   letter-spacing: 2px;
 }
+@media (max-width: 768px) {
+  .npc-section {
+    width: 100%;
+    padding: 0 12px;
+  }
 
-.npc-popup {
-  position: fixed;
-  bottom: 30px;
-  background: #ffffff;
-  color: #000000;
-  padding: 10px 18px;
-  border-radius: 10px;
-  font-weight: bold;
+  .npc-box {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    padding: 20px 16px;
+  }
+
+  .npc-dialogue {
+    font-size: 18px;
+  }
+
+  .npc-actions {
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .npc-actions button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+    letter-spacing: 1px;
+  }
+
+  .social-panel {
+    width: 100%;
+    margin-top: 16px;
+    padding: 14px;
+    gap: 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .social-panel button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .npc-popup {
+    bottom: 20px;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .npc-actions button:hover {
+    transform: none;
+  }
 }

@@ -85,14 +85,15 @@ const Skills = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
+      <h1 className="mobile-view-heading">Power-Ups I’ve Collected</h1>
       <motion.img
         src={gear5}
         alt="gear5"
         className="gear5"
         transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
       />
-      <div>
-        <h1>Power-Ups I’ve Collected</h1>
+      <div className="skills-sub-container">
+        <h1 className="web-view-heading">Power-Ups I’ve Collected</h1>
         <div className="skills-holding-container retro-border">
           <div>
             <p>Screen Pixels :-</p>

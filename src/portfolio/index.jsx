@@ -8,6 +8,8 @@ import {
   Projects,
   Experience,
 } from "./sections";
+import MobileNavBar from "../components/MobileNavBar";
+import useIsMobile from "./hooks/useIsMobile";
 import "./index.css";
 
 const sections = [
@@ -19,6 +21,7 @@ const sections = [
 ];
 
 const Portfolio = () => {
+  const isMobile = useIsMobile();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const CurrentSection = sections[currentIndex].component;
@@ -31,6 +34,21 @@ const Portfolio = () => {
     setCurrentIndex((prev) => (prev === 0 ? 0 : prev - 1));
   };
 
+  // 🔥 MOBILE LAYOUT
+  if (isMobile) {
+    return (
+      <div className="main-container">
+        {sections.map(({ id, component: Section }) => (
+          <section key={id} id={id} style={{ marginBottom: "80px" }}>
+            <Section />
+          </section>
+        ))}
+        <MobileNavBar />
+      </div>
+    );
+  }
+
+  // 🎮 DESKTOP LAYOUT (unchanged)
   return (
     <div className="main-container">
       <Navbar

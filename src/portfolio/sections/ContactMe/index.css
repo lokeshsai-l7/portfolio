@@ -21,3 +21,33 @@ h1 {
   align-items: center;
   width: 60%;
 }
+
+/* =========================
+   MOBILE RESPONSIVE ONLY
+   ========================= */
+
+@media (max-width: 768px) {
+  .contact-me-container {
+    padding: 0 12px;
+  }
+
+  .contact-me-container h1 {
+    font-size: 26px;
+    text-align: center;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .npc-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .thumbs-up-luffy {
+    width: 220px;
+    order: 1;
+  }
+}

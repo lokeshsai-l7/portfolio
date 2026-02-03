@@ -21,3 +21,32 @@ h1 {
   align-items: center;
   width: 80%;
 }
+
+/* =========================
+   MOBILE RESPONSIVE ONLY
+   ========================= */
+
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 0 12px;
+  }
+
+  .experience-container h1 {
+    font-size: 26px;
+    text-align: center;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .experience-sub-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .laughing-luffy {
+    width: 220px;
+  }
+}

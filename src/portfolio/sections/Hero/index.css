@@ -1,13 +1,14 @@
 .hero-container {
   width: 90%;
+  max-width: 1200px;
   padding: 20px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .hero-info {
-  margin-left: 40px;
   font-size: 40px;
   width: 60%;
   white-space: pre-line;
@@ -15,6 +16,7 @@
 
 .Typewriter__wrapper {
   white-space: pre-wrap;
+  line-height: 1.4;
 }
 
 .pikachu-gif {
@@ -81,5 +83,47 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-info {
+    width: 100%;
+    font-size: 18px;
+    margin: 30 0 0 0;
+  }
+
+  .pikachu-gif {
+    width: 36px;
+  }
+
+  .my-name {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .btn-container {
+    width: 100%;
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 16px;
+    order: 2;
+  }
+
+  .pixel-btn.mono {
+    width: 90%;
+    max-width: 280px;
+    font-size: 18px;
+    padding: 14px 0;
+  }
+
+  .profile-img {
+    width: 260px;
   }
 }

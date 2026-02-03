@@ -61,7 +61,7 @@ p {
   align-items: center;
   justify-content: center;
 
-  border: 3px solid white;
+  border: 3px dashed white;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -73,4 +73,89 @@ p {
 .skill:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px black;
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS ONLY
+   ========================= */
+
+@media (max-width: 768px) {
+  .web-view-heading {
+    display: none;
+  }
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0px;
+  }
+  .skills-sub-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .gear5 {
+    width: 220px;
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .skills-holding-container {
+    width: 100%;
+    height: auto;
+    padding: 16px 10px;
+    gap: 28px;
+  }
+
+  .retro-border {
+    padding: 14px 10px;
+    border: 1px solid white;
+    box-shadow:
+      2px 0 white,
+      -2px 0 white,
+      0 2px white,
+      0 -2px white;
+    border-radius: 8px;
+  }
+
+  .skills-box {
+    grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+    gap: 14px;
+  }
+
+  .tools-box {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .skill {
+    width: 54px;
+    height: 54px;
+  }
+
+  .skill svg {
+    font-size: 26px;
+  }
+  .skill:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-view-heading {
+    display: none;
+  }
 }

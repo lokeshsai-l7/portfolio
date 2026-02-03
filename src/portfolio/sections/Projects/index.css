@@ -55,3 +55,54 @@ h1 {
 .pikachu-gif {
   width: 40px;
 }
+/* =========================
+   MOBILE RESPONSIVE ONLY
+   ========================= */
+
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 0 12px;
+  }
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+
+  .projects-section {
+    width: 100%;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .tabs button {
+    font-size: 14px;
+    padding: 8px 14px;
+    word-spacing: 4px;
+  }
+
+  .pikachu-gif {
+    display: none;
+  }
+
+  .missions-grid {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+    height: auto;
+    max-height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs {
+    justify-content: center;
+  }
+}

@@ -18,3 +18,9 @@ nav {
 .nav-btn:hover {
   transform: scale(1.3);
 }
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
