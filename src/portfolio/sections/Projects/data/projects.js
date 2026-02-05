@@ -33,6 +33,7 @@ export const projects = {
         "Argo-CD",
       ],
       role: "Frontend Developer",
+      live: "https://backoffice.uidai.gov.in",
     },
   ],
 
@@ -43,7 +44,7 @@ export const projects = {
       description: "Game-style interactive developer portfolio.",
       tech: ["React.js", "Framer Motion"],
       github: "https://github.com/lokeshsai-l7/portfolio",
-      live: "https://portfolio-chi-five-ur8xu5a01e.vercel.app/",
+      live: "https://lokesh-sai-polishetty.vercel.app/",
     },
     {
       id: 4,
